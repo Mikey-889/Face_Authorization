@@ -239,7 +239,7 @@ def serve_static(path):
     return send_from_directory('.', path)
 
 # Initialize database on startup
-with app.app_context:
+with app.app_context():
     init_db()
 
 if __name__ == '__main__':
