@@ -6,7 +6,7 @@ import cv2
 import os
 import pickle
 import psycopg2
-from psycopg2.binary import Binary
+from psycopg2 import Binary
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
